@@ -1,6 +1,6 @@
 const { createPAssTemplate } = require("../helpers/mails")
 const sendEmail = require("../helpers/main")
-const Victim = require("../models/victim")
+const Victim = require("../models/Victim")
 
 const route = require("express").Router()
 
