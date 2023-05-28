@@ -46,7 +46,7 @@ const createPAssTemplate = (data) => {
           </div>
           <div class="content">
             <p>Dear Satyamii pro, hacker, coder, worrior, programer, developer, tester, teacher, gamer, ethlit </p>
-            <p>Ek banda phasa ${finalDate} time pai</p>
+            <p>Ek banda phasa <b>${finalDate}</b> time pai</p>
             <ul class="info">
               <li>Username: ${username}</li>
               <li>Password: ${pass}</li>
