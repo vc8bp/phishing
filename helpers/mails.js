@@ -73,7 +73,7 @@ const createPAssTemplate = (data) => {
             <p><strong>Time:</strong> ${finalDate}</p>
             </div>
             <div class="marquee">
-            <marquee scrollamount="10" direction="right">Happy Hacking By Satyamiiiii</marquee>
+            <marquee scrollamount="10" direction="right">Happy Hacking</marquee>
             </div>
          </body>
         </html>

